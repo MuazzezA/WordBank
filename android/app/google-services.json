@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "206181419984",
+    "project_id": "wordbank-8ed5f",
+    "storage_bucket": "wordbank-8ed5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206181419984:android:290aa1474be6969c5787d5",
+        "android_client_info": {
+          "package_name": "com.wordbank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt47lsKradu1MaKjq1JHexeNH961BJj8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
