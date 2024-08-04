@@ -1,23 +1,31 @@
 import React from 'react';
-import {StyleProp, ViewStyle, View, Dimensions, StatusBar} from 'react-native';
+import {StyleProp, ViewStyle, View, TouchableOpacity} from 'react-native';
 import {T} from './T.tsx';
 import {ScaledSheet} from 'react-native-size-matters';
-
+import ChevronLeft from '../assets/icons/chevron-left.svg';
 interface HeaderProps {
-  text?: string;
+  title?: string;
+  titleSize?: number;
   styles?: StyleProp<ViewStyle>;
   textColor?: string;
+  activeBack?: boolean;
+  appIcon?: boolean;
 }
 
 export const Header = (props: HeaderProps) => {
-  const {text, textColor, styles} = props;
+  const {title, textColor, appIcon, titleSize, styles, activeBack} = props;
   return (
     <View style={style.container}>
-      <StatusBar backgroundColor={'red'} />
-      <View style={style.tempIcon} />
+      {/*<StatusBar backgroundColor={'red'} />*/}
+      {activeBack && (
+        <TouchableOpacity activeOpacity={0.9}>
+          <ChevronLeft height={28} width={28} />
+        </TouchableOpacity>
+      )}
+      {appIcon && <View style={style.tempIcon} />}
       <T
-        text={text ?? 'WORD-BANK'}
-        size={24}
+        text={title ?? 'WORD-BANK'}
+        size={titleSize ?? 24}
         weight={'700'}
         color={textColor ?? '#7B0F30'}
       />

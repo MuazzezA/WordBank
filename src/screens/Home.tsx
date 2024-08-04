@@ -12,7 +12,7 @@ export const Home = () => {
 
   return (
     <View style={{flex: 1}}>
-      <Header />
+      <Header activeBack={true} appIcon={true} />
       <T text={'word bank'} size={18} />
       <WInput placeholder="Test" weight="400" />
       <ListHeader
