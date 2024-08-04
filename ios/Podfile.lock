@@ -1490,7 +1490,7 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
   hermes-engine: 16b8530de1b383cdada1476cf52d1b52f0692cbc
   RCT-Folly: 02617c592a293bd6d418e0a88ff4ee1f88329b47
-  RCTDeprecation: 4dc9c8fbcb15bc9e8f3cfa601ddc190e120f099b
+  RCTDeprecation: efb313d8126259e9294dc4ee0002f44a6f676aba
   RCTRequired: f49ea29cece52aee20db633ae7edc4b271435562
   RCTTypeSafety: a11979ff0570d230d74de9f604f7d19692157bc4
   React: 88794fad7f460349dbc9df8a274d95f37a009f5d
@@ -1541,15 +1541,15 @@ SPEC CHECKSUMS:
   ReactCommon: f42444e384d82ab89184aed5d6f3142748b54768
   RNAppleAuthentication: e99eaf3c4c01ad8ecb6125dd6f0cfd98871685b5
   RNCAsyncStorage: ec53e44dc3e75b44aa2a9f37618a49c3bc080a7a
-  RNCClipboard: 806a2c9ed0c0166d78721ee6eac202a8c1cffb36
+  RNCClipboard: 0a720adef5ec193aa0e3de24c3977222c7e52a37
   RNGestureHandler: 8dbcccada4a7e702e7dec9338c251b1cf393c960
   RNGoogleSignin: 08dc4ba7eac2096c7fecfe109f0950fa4683c803
   RNReanimated: f4ff116e33e0afc3d127f70efe928847c7c66355
   RNScreens: 5aeecbb09aa7285379b6e9f3c8a3c859bb16401c
-  RNSVG: 3001c6aa5fbcf5383f98c2d61bf8b91b9ebda75c
+  RNSVG: cb24fb322de8c1ebf59904e7aca0447bb8dbed5a
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: 348f8b538c3ed4423eb58a8e5730feec50bce372
 
 PODFILE CHECKSUM: 6e6c80f7176de23414f8008ba76a6d40ef205854
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.15.2
