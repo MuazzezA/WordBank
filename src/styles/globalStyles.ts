@@ -20,7 +20,6 @@ export const globalStyles = {
     color: 'black', // TODO : tema gelince düzelt burayı
   } as TextStyle,
   BUTTON: {
-    width: '90%',
     height: vs(34),
     backgroundColor: '#263238',
     borderRadius: 20,

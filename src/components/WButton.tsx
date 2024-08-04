@@ -2,6 +2,7 @@ import React from 'react';
 import {
   ActivityIndicator,
   GestureResponderEvent,
+  StyleSheet,
   TextStyle,
   TouchableOpacity,
 } from 'react-native';
@@ -26,13 +27,13 @@ export const WButton = (props: WButtonProps) => {
       onPress={onPress}
       activeOpacity={activityOpacity}
       disabled={isDisable}
-      style={{
-        ...globalStyles.BUTTON,
-        ...((isDisable || loading) && {
+      style={StyleSheet.flatten([
+        globalStyles.BUTTON,
+        (isDisable || loading) && {
           backgroundColor: '#676f73',
-        }),
-        ...style,
-      }}>
+        },
+        style,
+      ])}>
       {loading && (
         <ActivityIndicator
           color={'white'}
