@@ -1,6 +1,11 @@
 import React from 'react';
-import {ActivityIndicator, TextStyle, TouchableOpacity} from 'react-native';
-import {s, ScaledSheet} from 'react-native-size-matters';
+import {
+  ActivityIndicator,
+  GestureResponderEvent,
+  TextStyle,
+  TouchableOpacity,
+} from 'react-native';
+import {ScaledSheet} from 'react-native-size-matters';
 import {globalStyles} from '../styles/globalStyles.ts';
 import {T} from './T.tsx';
 import {activityOpacity} from '../constants/General.ts';
@@ -9,26 +14,26 @@ interface WButtonProps {
   text: string;
   style?: TextStyle;
   isDisable?: boolean;
-  displayLoading?: boolean;
-  onPress?: (data?: unknown) => void;
+  loading?: boolean;
+  onPress: (event: GestureResponderEvent) => void;
 }
 
 export const WButton = (props: WButtonProps) => {
-  const {text, style, isDisable, displayLoading, onPress} = props;
+  const {text, style, isDisable, loading, onPress} = props;
 
   return (
     <TouchableOpacity
-      onPress={() => onPress?.()}
+      onPress={onPress}
       activeOpacity={activityOpacity}
       disabled={isDisable}
       style={{
         ...globalStyles.BUTTON,
-        ...((isDisable || displayLoading) && {
+        ...((isDisable || loading) && {
           backgroundColor: '#676f73',
         }),
         ...style,
       }}>
-      {displayLoading && (
+      {loading && (
         <ActivityIndicator
           color={'white'}
           // @ts-ignore

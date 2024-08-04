@@ -10,7 +10,7 @@ export const Home = () => {
       <T text={'word bank'} size={18} />
       <WButton
         text={'button'}
-        displayLoading={false}
+        loading={false}
         isDisable={false}
         onPress={() => console.log('test')}
       />
