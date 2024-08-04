@@ -7,13 +7,19 @@
  *
  */
 
-import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import RootNavigation from './navigator/RootNavigator.tsx';
+import {NavigationContainer} from '@react-navigation/native';
+import React from 'react';
 
 const App = () => {
   return (
     <SafeAreaProvider>
-      <RootNavigation />
+      <NavigationContainer>
+        <SafeAreaView style={{flex: 1, backgroundColor: 'transparent'}}>
+          <RootNavigation />
+        </SafeAreaView>
+      </NavigationContainer>
     </SafeAreaProvider>
   );
 };
